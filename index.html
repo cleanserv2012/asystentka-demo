@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asystentka 1.0 – DEMO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Wita Cię Monika Konieczna 👋</h1>
+    <p>Twoja osobista Asystentka 1.0</p>
+    <div id="language-select">
+      <button onclick="setLanguage('pl')">🇵🇱 Polski</button>
+      <button onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+    <div id="chat" style="display:none;">
+      <h2 id="chat-heading"></h2>
+      <div id="examples"></div>
+      <textarea id="input" placeholder=""></textarea>
+      <button onclick="sendMessage()">Wyślij</button>
+      <div id="response"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

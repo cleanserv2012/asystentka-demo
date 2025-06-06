@@ -42,4 +42,11 @@ function sendMessage() {
   responseBox.innerText = "🤖 Asystentka odpowiada (demo)...
 
 " + message;
-}
+}document.getElementById("pl").addEventListener("click", function() {
+  setLanguage("pl");
+});
+
+document.getElementById("en").addEventListener("click", function() {
+  setLanguage("en");
+});
+

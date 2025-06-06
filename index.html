@@ -15,6 +15,17 @@
         <button id="en">🇬🇧 English</button>
     </div>
 
-    <script src="script.js" defer></script>
+    <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const plBtn = document.getElementById("pl");
+    const enBtn = document.getElementById("en");
+
+    if (plBtn && enBtn) {
+      plBtn.addEventListener("click", () => setLanguage("pl"));
+      enBtn.addEventListener("click", () => setLanguage("en"));
+    }
+  });
+</script>
+<script src="script.js"></script>
 </body>
-</html>
+</html>Fix language buttons
